@@ -20,7 +20,11 @@ This exercise contains an introduction to the thread programming in JAVA, also t
 
 Con el método implementado run() la salida de los hilos es secuencial porque los tres objetos se están ejecutando en un mismo hilo, mientras que con el método start() la salida de los números es de forma aleatoria por que los tres hilos se están ejecutando simultáneamente.
 
+### Run()
+
 ![Run()](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/run().png)
+
+### Start()
 
 ![Start()](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/start().png)
 
