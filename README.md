@@ -20,6 +20,10 @@ This exercise contains an introduction to the thread programming in JAVA, also t
 
 Con el método implementado run() la salida de los hilos es secuencial porque los tres objetos se están ejecutando en un mismo hilo, mientras que con el método start() la salida de los números es de forma aleatoria por que los tres hilos se están ejecutando simultáneamente.
 
+![Run()](https://github.com/mariahv9/ARSWLab1/BLACKLISTSEARCH/resources/run().png)
+
+![Start()](https://github.com/mariahv9/ARSWLab1/BLACKLISTSEARCH/resources/start().png)
+
 ## Part II - Black List Search Exercise
 
 For an automatic computer security surveillance software, a component is being developed to validate the IP addresses in several thousands of known malicious blacklists (of malicious hosts), and to report those that exist in at least five of said lists.
@@ -31,7 +35,11 @@ Said component is designed according to the following diagram, where:
 
 * ``` HostBlackListsValidator ``` is a class that offers the ```checkHost ``` method, which, through the ``` HostBlackListDataSourceFacade ``` class, validates a given host in each of the blacklists. In this method is considered the policy that when a HOST is found in at least five blacklists, it will be registered as not reliable, or as reliable otherwise. Additionally, it will return the list of the numbers of the blacklists where the HOST was registered.
 
+![diagram()](https://github.com/mariahv9/ARSWLab1/BLACKLISTSEARCH/resources/diagram().png)
+
 When using the module, the evidence that the registration was made as reliable or not reliable is given by the messages of LOGs:
+
+![logs()](https://github.com/mariahv9/ARSWLab1/BLACKLISTSEARCH/resources/logs().png)
 
 The test program provided (Main), takes only a few seconds to analyze and report the address provided (200.24.34.55), since it is registered more than five times in the first servers, so it does not need to cover all of them. However, doing the search in cases where there are NO reports, or where they are scattered in the thousands of blacklists, takes a lot of time.
 
@@ -63,11 +71,13 @@ From the above, implement the following sequence of experiments to perform the v
 
 When starting the program run the monitor jVisualVM, and as you run the tests, review and record the CPU and memory consumption in each case.
 
+![Visual](https://github.com/mariahv9/ARSWLab1/BLACKLISTSEARCH/resources/jvisualvm().png)
 
 With the above, and with the given execution times, make a graph of solution time vs. Number of threads. Analyze and hypothesize with your partner for the following questions (you can take into account what was reported by jVisualVM):
 
 * According to Amdahls law, where ``` S(n) ``` is the theoretical improvement of performance, P the parallel fraction of the algorithm, and n the number of threads, the greater n, the better this improvement should be. Why is the best performance not achieved with the 500 threads? How is this performance compared when using 200 ?.
 
+![formule()](https://github.com/mariahv9/ARSWLab1/BLACKLISTSEARCH/resources/ahmdahls().png)
 
 * How does the solution behave using as many processing threads as cores compared to the result of using twice as much?
 * According to the above, if for this problem instead of 100 threads in a single CPU could be used 1 thread in each of 100 hypothetical machines, Amdahls law would apply better ?. If x threads are used instead of 100/x distributed machines (where x is the number of cores of these machines), would it be improved? Explain your answer.
