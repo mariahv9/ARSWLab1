@@ -120,6 +120,8 @@ SnakeRace is an autonomous version, multi-snake of the famous game called 'snake
 * There are some points (red arrows) that teleport the snakes
 * The rays causes that the snake increase its speed
 
+![game](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/sshot.png)
+
 ## Part III
 
 1. Analyse the code in order to understand how the threads are being used to create an autonomous behavior in the N snakes
