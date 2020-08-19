@@ -136,6 +136,9 @@ SnakeRace is an autonomous version, multi-snake of the famous game called 'snake
 ## Part III
 
 1. Analyse the code in order to understand how the threads are being used to create an autonomous behavior in the N snakes
+
+- En el instante en el que más de una serpiente interactua con un objeto (diferente a la pared) se le va permitir a la serpiente crecer; desde un punto de vista de la máquina, accedió e hizo la liberación de la casilla determinada más rapido que el resto de objetos disponibles.
+
 2. Accordingly, and using the game logic, identify and write clearly (ANSWERS.txt file)
 * Possible race conditions
 * An incorrect or inappropriate use of collections, considering its concurrent handling(For this increase the game speed and execute it multiples times until an error has been raised).
