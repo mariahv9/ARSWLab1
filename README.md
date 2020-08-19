@@ -64,6 +64,8 @@ To refactor this code, and have it exploit the multi-core capability of the comp
 
 The strategy of parallelism previously implemented is inefficient in certain cases, since the search is still carried out even when the  ``` N ``` threads (as a whole) have already found the minimum number of occurrences required to report to the server as malicious. How could the implementation be modified to minimize the number of queries in these cases? What new element would this bring to the problem?
 
+* El problema se podría automatizar con la adición de un hilo controlador, que lleve procesos de los rangos de IPs, y para complementarlo uso de variables compartidas para el registro de datos y saber cuando un Thread llego a su tope de servidores, esta función se podria manejar con syncronize.
+
 ## Part IV - Performance Evaluation
 
 From the above, implement the following sequence of experiments to perform the validation of dispersed IP addresses (for example 202.24.34.55), taking the execution times of them (be sure to do them on the same machine):
