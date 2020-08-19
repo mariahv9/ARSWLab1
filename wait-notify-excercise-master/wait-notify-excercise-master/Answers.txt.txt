@@ -1,0 +1,13 @@
+Respuestas parte III
+1. Possible race conditions
+Al momento en que dos o más objetos de interacción intenten reubicarse en la misma celda 
+libre se podría generar un error en el monitor de una variable, ya que mientras uno 
+intenta bloquear la celda, puede que el otro ya la haya bloqueado primero.
+
+2. An incorrect or inappropriate use of collections, considering its concurrent handling.
+La colección general del programa (Board.gameboard) que se comparte entre
+los distintos hilos y que no posee un metodo en el que se tenga una "reserva" 
+sobre las celdas individuales.
+
+3. Unnecessary use of active waits
+Los multiples "while" que se encuentran en changeDirection para asignar un dirección aleatoria a la serpiente.
