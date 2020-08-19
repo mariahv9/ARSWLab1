@@ -73,11 +73,11 @@ From the above, implement the following sequence of experiments to perform the v
 
 2. As many threads as processing cores (have the program determine this using the [Runtime API](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html) ). 
 * 8
-![hilo2](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/1hilo.png)
+![hilo2](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/8hilos.png)
 
 3. As many threads as twice the number of processing cores. 
 * 16
-![hilo3](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/1hilo.png)
+![hilo3](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/16hilos.png)
 
 4. 50 threads 
 ![hilo4](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/50hilos.png)
