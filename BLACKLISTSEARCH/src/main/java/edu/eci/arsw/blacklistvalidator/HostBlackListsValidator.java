@@ -56,6 +56,7 @@ public class HostBlackListsValidator {
             CountFast c = new CountFast(ctd * parts, skds.getRegisteredServersCount(), ipaddress, skds);
 //            c.join();
             threadsCountFast.add(c);
+            
         }
 
 
