@@ -69,10 +69,21 @@ The strategy of parallelism previously implemented is inefficient in certain cas
 From the above, implement the following sequence of experiments to perform the validation of dispersed IP addresses (for example 202.24.34.55), taking the execution times of them (be sure to do them on the same machine):
 
 1. A single thread. 
+![hilo1](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/1hilo.png)
+
 2. As many threads as processing cores (have the program determine this using the [Runtime API](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html) ). 
+* 8
+![hilo2](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/1hilo.png)
+
 3. As many threads as twice the number of processing cores. 
+* 16
+![hilo3](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/1hilo.png)
+
 4. 50 threads 
+![hilo4](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/50hilos.png)
+
 5. 100 threads
+![hilo5](https://github.com/mariahv9/ARSWLab1/blob/master/BLACKLISTSEARCH/resources/100hilos.png)
 
 When starting the program run the monitor jVisualVM, and as you run the tests, review and record the CPU and memory consumption in each case.
 
